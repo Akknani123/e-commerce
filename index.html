@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<body>
+    <nav class="navbar navbar-expand-lg " id="navbarmain">
+        <a class="navbar-brand text-white" href="index.html"><img src="FOODIE.png">Foodie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="index.html">Home<sapn class="sr-only">(current)</sapn></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#menublock">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-white" href="#">Another Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <a class="nav-link" href="#" id="cart-link" data-toggle="modal" data-target="#cartModal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg> 
+                  <span class="badge badge-light" id="cart-count">0</span>
+              </a>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                </form>
+        </div>
+    </nav>
+
+    <section class="intro">
+        <div class="container custom-container">
+                <div class="intro-img">
+                    <img src="Restaurant_Banners.jpg" class="img-fluid" alt="Restaurant_Banners">
+                </div>    
+        </div>
+    </section>
+
+    <section class="menublock">
+        <div class="container mt-5">
+            <div class="card-head">
+                <h1 class="text-center" style="color: rgb(255, 245, 245);background-color: black;">Menu</h1>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="veg-stater.jpg" class="card-img-top" alt="Item 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Veg Staters</h5>
+                    <p class="card-text">Description of Item 1.</p>
+                    <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#vegStarterModal">View now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="non-vegstarter.jpg" class="card-img-top" alt="Item 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Non-veg Staters</h5>
+                    <p class="card-text">Description of Item 2.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#NonvegStarterModal">View now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="veg-stater.jpg" class="card-img-top" alt="Item 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Veg Curries</h5>
+                    <p class="card-text">Description of Item 3.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#vegcurryModal">View now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="non-vegstarter.jpg" class="card-img-top" alt="Item 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Non-veg Curries</h5>
+                    <p class="card-text">Description of Item 4.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nonvegcurryModal">View now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Chicken-Biryani-Recipe.jpg" class="card-img-top" alt="Item 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Briyanis</h5>
+                    <p class="card-text">Description of Item 5.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#BiryaniModal">View now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="mocktail.jpg" class="card-img-top" alt="Item 6">
+                  <div class="card-body">
+                    <h5 class="card-title">Mocktails</h5>
+                    <p class="card-text">Description of Item 6.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mocktailsModal">View now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+
+    <!--order items Modal-->
+    <div class="modal fade" id="vegStarterModal" tabindex="-1" role="dialog" aria-labelledby="vegStarterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="vegStarterModalLabel">Order Veg Starters</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add items to order here -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 1</h5>
+                        <p class="card-text">Description of Item 1.</p>
+                        <button type="button" onclick="addToCart('vegstarter1')" class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 2</h5>
+                        <p class="card-text">Description of Item 2.</p>
+                        <button type="button" class="btn btn-primary" onclick="addToCart('vehstart2')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add more items as needed -->
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--non-veg starter-->
+      <div class="modal fade" id="NonvegStarterModal" tabindex="-1" role="dialog" aria-labelledby="nonvegStarterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="vegStarterModalLabel">Order Non-Veg Starters</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add items to order here -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 1</h5>
+                        <p class="card-text">Description of Item 1.</p>
+                        <button type="button" class="btn btn-primary" onclick="addToCart('nonvegstarter1')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 2</h5>
+                        <p class="card-text">Description of Item 2.</p>
+                        <button type="button" class="btn btn-primary" onclick="addToCart('nonvegstarter2')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add more items as needed -->
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--vegcurries-->
+      <div class="modal fade" id="vegcurryModal" tabindex="-1" role="dialog" aria-labelledby="nonvegStarterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="vegStarterModalLabel">Order Veg Curries</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add items to order here -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 1</h5>
+                        <p class="card-text">Description of Item 1.</p>
+                        <button class="btn btn-primary" onclick="addtoCart('vegcurry1')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 2</h5>
+                        <p class="card-text">Description of Item 2.</p>
+                        <button class="btn btn-primary" onclick="addtoCart('vegcurry2')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add more items as needed -->
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--nonnveg curries-->
+      <div class="modal fade" id="nonvegcurryModal" tabindex="-1" role="dialog" aria-labelledby="nonvegStarterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="vegStarterModalLabel">Order Non-Veg Curries</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add items to order here -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 1</h5>
+                        <p class="card-text">Description of Item 1.</p>
+                        <button class="btn btn-primary" onclick="addtoCart('nonvegcurry1')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 2</h5>
+                        <p class="card-text">Description of Item 2.</p>
+                        <button class="btn btn-primary" onclick="addtoCart('nonvegcurry2')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add more items as needed -->
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Briyani's-->
+      <div class="modal fade" id="BiryaniModal" tabindex="-1" role="dialog" aria-labelledby="nonvegStarterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="vegStarterModalLabel">Order Biryani</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add items to order here -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 1</h5>
+                        <p class="card-text">Description of Item 1.</p>
+                        <button class="btn btn-primary" onclick="addtoCart('vegbiryani')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 2</h5>
+                        <p class="card-text">Description of Item 2.</p>
+                        <button class="btn btn-primary" onclick="addtoCart('chickenbiryani')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add more items as needed -->
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Mocktails-->
+      <div class="modal fade" id="mocktailsModal" tabindex="-1" role="dialog" aria-labelledby="nonvegStarterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="vegStarterModalLabel">Order Mocktails</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!-- Add items to order here -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 1</h5>
+                        <p class="card-text">Description of Item 1.</p>
+                        <button class="btn btn-primary" onclick="addtoCart('mocktail1')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Item 2</h5>
+                        <p class="card-text">Description of Item 2.</p>
+                        <button class="btn btn-primary" onclick="addtoCart('mocktail2')">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add more items as needed -->
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body" id="cartItemsContainer">
+                  <!-- This is where the cart items will be displayed -->
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+      
+      <!-- Bootstrap JS (Optional) -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script>
+        function addToCart(itemName) {
+            var cartItems = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
+            cartItems.push(itemName);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            addItemToCart();
+            displayCartItems();
+        }
+
+        function addItemToCart() {
+          var cartCountElement = document.getElementById("cart-count");
+          var currentCount = parseInt(cartCountElement.innerText);
+          cartCountElement.innerText = currentCount + 1;
+        }
+        // Function to display items in the cart
+        
+
+        function displayCartItems() {
+            var cartItems = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
+            var cartItemsContainer = document.getElementById('cartItemsContainer');
+            cartItemsContainer.innerHTML = '';
+
+            cartItems.forEach(function(item, index) {
+                var itemElement = document.createElement('div');
+                itemElement.innerHTML = `
+                    <div class="row">
+                        <div class="col">${item}</div>
+                        <div class="col"><button type="button" class="btn btn-danger btn-sm" onclick="removeFromCart(${index})">Remove</button></div>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(itemElement);
+            });
+        }
+
+        // Function to remove an item from the cart
+        function removeFromCart(index) {
+            var cartItems = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
+            cartItems.splice(index, 1);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            displayCartItems();
+            updateCartCount(cartItems.length);
+            subtractItemFromCart();
+        }
+
+        function subtractItemFromCart() {
+    var cartCountElement = document.getElementById("cart-count");
+    var currentCount = parseInt(cartCountElement.innerText);
+    cartCountElement.innerText = currentCount - 1;
+}
+ 
+        // Add event listener to the cart link
+        document.getElementById('cart-link').addEventListener('click', displayCartItems);
+    </script>
+</body>
+</html>

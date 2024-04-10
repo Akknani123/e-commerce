@@ -1,0 +1,58 @@
+body{
+    background-image: url('Making.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navbar-brand img{
+    height: 50px;
+}
+
+.navbar {
+    overflow: hidden;
+   /* background-color: #5c6a93;*/
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: black;
+    
+  }
+
+  
+
+.intro-img img{
+    width:100%;
+    height: auto;
+     display: block;
+     margin-top: 20px;
+     padding: 0;
+     position: relative;
+}
+
+
+/* Style the down arrow button */
+.arrow::after {
+    content: '\25BE'; /* Unicode for down arrow */
+    margin-left: 5px;
+}
+
+
+
+.menublock img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+
+}
+
+.card {
+    align-items: center;
+    background-color: rgb(9, 9, 10);
+    color: aliceblue;
+    margin: 10px;
+}
+
+.card:hover{
+    background-color: rgb(133, 153, 175);
+}
